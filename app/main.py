@@ -1,9 +1,7 @@
 """Main FastAPI app instance declaration."""
 
 from fastapi import FastAPI
-from db.database import SessionLocal
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.middleware.trustedhost import TrustedHostMiddleware
+from app.db import SessionLocal
 
 from app.api.api import api_router
 
